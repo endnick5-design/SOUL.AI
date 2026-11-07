@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#09090b">
+  <meta name="description" content="SOUL AI — your personal AI assistant.">
+  <title>SOUL AI — by Adinath</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="SOUL AI home"><span class="brand-mark">S</span><span>SOUL<span class="brand-ai"> AI</span><small>by Adinath</small></span></a>
+    <div class="top-status"><span class="status-dot"></span><span id="statusText">SYSTEM ONLINE</span></div>
+    <button class="icon-btn" id="clearBtn" title="Clear conversation" aria-label="Clear conversation">↻</button>
+  </header>
+
+  <main class="layout">
+    <section class="hero">
+      <div class="eyebrow"><span></span> PERSONAL AI INTERFACE <span></span></div>
+      <h1>HOW CAN I <em>HELP</em> YOU?</h1>
+      <p class="subhead">Your world. Your assistant. Your SOUL.</p>
+      <div class="orb-wrap">
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+        <div class="orb-core"><div class="orb-inner"><span>SOUL</span><small>AI</small></div></div>
+        <div class="orb-caption" id="orbCaption">READY WHEN YOU ARE</div>
+      </div>
+      <div class="quick-actions">
+        <button class="quick" data-prompt="Give me a quick briefing for today."><span>◈</span> Daily briefing</button>
+        <button class="quick" data-prompt="Help me plan my day."><span>⌁</span> Plan my day</button>
+        <button class="quick" data-prompt="Explain a topic in a simple way."><span>✧</span> Learn something</button>
+      </div>
+    </section>
+
+    <section class="assistant-panel" aria-label="Chat with SOUL AI">
+      <div class="panel-head"><div><span class="panel-kicker">CONVERSATION</span><h2>Talk to SOUL</h2></div><span class="live-pill"><i></i> LIVE</span></div>
+      <div class="messages" id="messages" aria-live="polite">
+        <div class="message soul-message"><div class="avatar">S</div><div class="bubble"><span class="sender">SOUL</span><p>Hey! I'm SOUL, your personal assistant. What would you like to do today?</p></div></div>
+      </div>
+      <div class="typing" id="typing" hidden><span></span><span></span><span></span> SOUL is thinking</div>
+      <form class="composer" id="chatForm">
+        <input id="promptInput" type="text" autocomplete="off" placeholder="Ask SOUL anything..." aria-label="Message SOUL">
+        <button type="button" class="mic-btn" id="micBtn" title="Use voice" aria-label="Use voice">🎙</button>
+        <button class="send-btn" type="submit" aria-label="Send message">➤</button>
+      </form>
+      <div class="panel-foot"><span>SOUL AI · PERSONAL ASSISTANT</span><span>DEMO MODE</span></div>
+    </section>
+  </main>
+  <footer>MADE WITH PURPOSE <span>•</span> <b>SOUL AI</b> <span>•</span> BY ADINATH</footer>
+  <script src="app.js"></script>
+</body>
+</html>
